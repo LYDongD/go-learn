@@ -18,6 +18,10 @@ type Student struct {
 	speciality string
 }
 
+func (h *Human) SayHi() {
+	fmt.Printf("i am %s, %d this year\n", h.name, h.age)
+}
+
 func main() {
 
 	//inherit
@@ -36,4 +40,6 @@ func main() {
 
 	mark.int = 3
 	fmt.Println(mark.int)
+
+	mark.SayHi()
 }
